@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1023</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:#162c30</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(22, 44, 48);
+color:#ffffff;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <attribute name="title">
+      <string>AVL-Tree</string>
+     </attribute>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>821</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #ffffff;
+background-image: url(:/bg1-forest.png);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_avl">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>10</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>13</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+  	background-color: rgb(30, 65, 72);
+  	border: 5px solid #4c737b;
+	border-radius: 15px;
+	color:#ffffff;
+	font: 25 13pt &quot;Ubuntu&quot;;
+}
+</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_insert_avl">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>90</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>15</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 25 15pt &quot;Ubuntu&quot;;
+  	background-color: #36714a;
+  	border: 5px solid #274832;
+	border-radius: 40px;
+}
+QPushButton:pressed {
+    background-color: #274832;
+}</string>
+      </property>
+      <property name="text">
+       <string>Insert</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_delete_avl">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>190</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>15</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 25 15pt &quot;Ubuntu&quot;;
+  	background-color: #bf3434;
+  	border: 5px solid #6b0808;
+	border-radius: 40px;
+}
+QPushButton:pressed {
+    background-color: #6b0808;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>RB-Tree</string>
+     </attribute>
+     <widget class="QGraphicsView" name="graphicsView_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>811</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #ffffff;
+background-image: url(:/bg2-forest.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_rb">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>10</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>13</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+  	background-color: rgb(30, 65, 72);
+  	border: 5px solid #4c737b;
+	border-radius: 15px;
+	color:#ffffff;
+	font: 25 13pt &quot;Ubuntu&quot;;
+}
+</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_insert_rb">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>90</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>15</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 25 15pt &quot;Ubuntu&quot;;
+  	background-color: #36714a;
+  	border: 5px solid #274832;
+	border-radius: 40px;
+}
+QPushButton:pressed {
+    background-color: #274832;
+}</string>
+      </property>
+      <property name="text">
+       <string>Insert</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_delete_rb">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>190</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>15</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 25 15pt &quot;Ubuntu&quot;;
+  	background-color: #bf3434;
+  	border: 5px solid #6b0808;
+	border-radius: 40px;
+}
+QPushButton:pressed {
+    background-color: #6b0808;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Splay-Tree</string>
+     </attribute>
+     <widget class="QGraphicsView" name="graphicsView_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>811</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/bg3-forest.png);</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="input_splay">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>10</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>13</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+  	background-color: rgb(30, 65, 72);
+  	border: 5px solid #4c737b;
+	border-radius: 15px;
+	color:#ffffff;
+	font: 25 13pt &quot;Ubuntu&quot;;
+}
+</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_insert_splay">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>90</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>15</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 25 15pt &quot;Ubuntu&quot;;
+  	background-color: #36714a;
+  	border: 5px solid #274832;
+	border-radius: 40px;
+}
+QPushButton:pressed {
+    background-color: #274832;
+}</string>
+      </property>
+      <property name="text">
+       <string>Insert</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_delete_splay">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>190</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>15</pointsize>
+        <weight>3</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 25 15pt &quot;Ubuntu&quot;;
+  	background-color: #bf3434;
+  	border: 5px solid #6b0808;
+	border-radius: 40px;
+}
+QPushButton:pressed {
+    background-color: #6b0808;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
